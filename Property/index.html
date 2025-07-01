@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Schema</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body itemscope itemtype="https://organised.team/Schema">
+    <header>
+        <h1>Property</h1>
+    </header>
+    <main>
+        <p>
+            This is (somewhat self-referentially) a schema for each Property in a schema
+        </p>
+        <table>
+            <caption>The <span itemprop="name">Property</span> schema</caption>
+            <thead>
+                <tr>
+                    <th>Property Name</th>
+                    <th>Cardinality</th>
+                    <th>Type</th>
+                    <th>Required</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+                    <td itemprop="name">name</td>
+                    <td itemprop="type">https://schema.org/Text</td>
+                    <td itemprop="cardinality">1</td>
+                    <td itemprop="required">Yes</td>
+                    <td itemprop="description">The name of the property</td>
+                </tr>
+                <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+                    <td itemprop="name">type</td>
+                    <td itemprop="type">https://schema.org/URL</td>
+                    <td itemprop="cardinality">1</td>
+                    <td itemprop="required">Yes</td>
+                    <td itemprop="description">
+                        A url for the type of the property. It's important to note that this can be derived from the closest element that has the Schema type as its itemtype attribute, and the itemscope attribute set.
+                    </td>
+                </tr>
+                <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+                    <td itemprop="name">cardinality</td>
+                    <td itemprop="type">https://organised.team/Cardinal</td>
+                    <td itemprop="cardinality">1</td>
+                    <td itemprop="required">Yes</td>
+                    <td itemprop="description">Properties of the schema</td>
+                </tr>
+                <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+                    <td itemprop="name">required</td>
+                    <td itemprop="type">https://schema.org/Boolean</td>
+                    <td itemprop="cardinality">1</td>
+                    <td itemprop="required">Yes</td>
+                    <td itemprop="description">Whether the property is required or not</td>
+                </tr>
+                <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+                    <td itemprop="name">description</td>
+                    <td itemprop="type">https://schema.org/Text</td>
+                    <td itemprop="cardinality">0..1</td>
+                    <td itemprop="required">No</td>
+                    <td itemprop="description">A description of the property</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Stance Global Ltd</p>
+    </footer>
+</body>
+
+</html>
