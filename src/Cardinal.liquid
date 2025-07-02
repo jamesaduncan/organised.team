@@ -1,10 +1,14 @@
 --- 
 layout: schema
 schematype: Cardinal
-tag: schema
+tags: schema
+description: The Cardinal datatype is an <a href="/Enumerated">Enumerated</a> type that indicates the cardinality of a property in a schema.
 ---
 <p itemprop="description">
-    The Cardinal datatype is an enumerated type, with the following possible values:
+    {{ description }}
+</p>
+<p>
+    It has the following possible values:
     <ol>
         <li><strong itemprop="enumerator">1</strong> - Exactly one instance of the property is required.</li>
         <li><strong itemprop="enumerator">0..1</strong> - Zero or one instance of the property is allowed.</li>

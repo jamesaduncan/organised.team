@@ -1,0 +1,34 @@
+--- 
+layout: schema
+schematype: Schema
+tags: schema
+description: A schema for a standard definition
+---
+<p itemprop="description">
+    A standard is an example of putting a policy into practice. By following a standard, it is possible to achieve compliance with a policy. Adherence to some standards may achieve compliance with multiple policies.
+</p>
+<table>
+    <caption itemprop="name">Standard</caption>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Cardinality</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">implements</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">1..n</td>
+            <td itemprop="description">Link to a policy or policies that this standard implements.</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">description</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">Detailed description of the standard.</td>
+        </tr>
+    </tbody>
+</table>

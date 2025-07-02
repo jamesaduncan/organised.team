@@ -1,0 +1,62 @@
+--- 
+layout: schema
+schematype: Role
+tags: schema
+description: defines a specific job role or position within a skills framework
+---
+<p itemprop="description">The Role schema defines a specific job role or position within a skills framework, such as "Data Scientist" or "Software Developer". Roles can apply to one or multiple levels within their framework and may belong to specific categories or job
+    families.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Cardinality</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">name</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">The name of the role</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">description</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">A description of the role's purpose and responsibilities</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">framework</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">Link to the SkillsFramework this role belongs to</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">scope</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="description">Scope of the role, indicating the areas it applies to by way of URLs</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">previousRole</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">Link to the previous role in the career progression ladder</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">alternativeTitle</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="description">Alternative name or title for this role</td>
+        </tr>
+        <tr itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">responsibility</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="description">Key responsibilities associated with this role</td>
+        </tr>
+    </tbody>
+</table>
