@@ -9,10 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="https://organised.team/Schema">
+<body id="a" itemscope itemtype="https://organised.team/Schema">
     <header>
         <h1>Policy</h1>
     </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/Policy">Policy</a>
+            </li>
+        </menu>
+    </nav>
     <main>
         <p>
             The Policy schema defines the structure for a policy document, including its unique identifier, name, description, and scope. This schema is used to ensure that policies are consistently defined and can be easily referenced across different systems.
@@ -22,8 +32,8 @@
             <thead>
                 <tr>
                     <th>Property Name</th>
-                    <th>Cardinality</th>
                     <th>Type</th>
+                    <th>Cardinality</th>
                     <th>Description</th>
                 </tr>
             </thead>

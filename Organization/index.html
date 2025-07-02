@@ -9,17 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="https://schema.org/Schema">
+<body id="a" itemscope itemtype="https://schema.org/Schema">
     <header>
         <h1 itemprop="name">Organization</h1>
     </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/Organization">Organization</a>
+            </li>
+        </menu>
+    </nav>
     <main>
         <section itemprop="description">
             <p>
                 An organization is a collection of entities that work together to achieve a common goal or goals.
             </p>
         </section>
-        <section itemprop="property" itemtype="https://organised.team/Property">
+        <section>
             <p>
                 Beyond the properties specified here, an organisation can also have the properties specified in
                 <a href="https://schema.org/Organization" itemprop="parent">https://schema.org/Organization</a>.

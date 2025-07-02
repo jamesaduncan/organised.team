@@ -9,10 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="https://organised.team/Type">
+<body id="a" itemscope itemtype="https://organised.team/Type">
     <header>
         <h1>Enumerated</h1>
     </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/Enumerated">Enumerated</a>
+            </li>
+        </menu>
+    </nav>
     <main itemscope itemtype="https://organised.team/Property">
         <p itemprop="description">
             The enumerated datatype is a type that allows for a fixed set of values, known as enumerators. Each enumerator is a specific value that can be used. The value is valid when it matches one of the enumerators defined in the schema.

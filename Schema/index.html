@@ -9,12 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="https://schema.org/Thing">
+<body id="a" itemscope itemtype="https://schema.org/Thing">
     <header>
         <h1>Schema</h1>
     </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/Schema">Schema</a>
+            </li>
+        </menu>
+    </nav>
     <main>
-        <p>
+        <p itemprop="description">
             This is (somewhat self-referentially) a Schema for a Schema
         </p>
         <table>
@@ -22,8 +32,8 @@
             <thead>
                 <tr>
                     <th>Property Name</th>
-                    <th>Cardinality</th>
                     <th>Type</th>
+                    <th>Cardinality</th>
                     <th>Description</th>
                 </tr>
             </thead>

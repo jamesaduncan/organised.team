@@ -9,21 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="https://organised.team/Schema">
+<body id="a" itemscope itemtype="https://organised.team/Schema">
     <header>
         <h1>User Need</h1>
     </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/UserNeed">UserNeed</a>
+            </li>
+        </menu>
+    </nav>
     <main>
-        <p>
+        <p itemprop="description">
             The User Need schema defines the requirements and expectations of a user within the context of a system or service. It is used to capture what users need from a product or service, ensuring that their needs are met effectively.
         </p>
         <table>
-            <caption itemprop="name">Policy</caption>
+            <caption itemprop="name">User Need</caption>
             <thead>
                 <tr>
                     <th>Property Name</th>
-                    <th>Cardinality</th>
                     <th>Type</th>
+                    <th>Cardinality</th>
                     <th>Description</th>
                 </tr>
             </thead>
