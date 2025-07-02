@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Policy Schema</title>
+    <title>Standard Schema</title>
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="a" itemscope itemtype="https://organised.team/Schema">
     <header>
-        <h1>Policy</h1>
+        <h1>Standard</h1>
     </header>
     <nav>
         <menu itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -19,16 +19,16 @@
                 <a href="/">Home</a>
             </li>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemref="a" itemprop="name" href="https://organised.team/Policy">Policy</a>
+                <a itemref="a" itemprop="name" href="https://organised.team/Standard">Standard</a>
             </li>
         </menu>
     </nav>
     <main>
         <p itemprop="description">
-            The Policy schema defines the structure for a policy document, including its unique identifier, name, description, and scope. This schema is used to ensure that policies are consistently defined and can be easily referenced across different systems.
+            A standard is an example of putting a policy into practice. By following a standard, it is possible to achieve compliance with a policy. Adherence to some standards may achieve compliance with multiple policies.
         </p>
         <table>
-            <caption itemprop="name">Policy</caption>
+            <caption itemprop="name">Standard</caption>
             <thead>
                 <tr>
                     <th>Property Name</th>
@@ -39,22 +39,16 @@
             </thead>
             <tbody>
                 <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
-                    <td itemprop="name">statement</td>
-                    <td itemprop="type">https://schema.org/Text</td>
-                    <td itemprop="cardinality">1</td>
-                    <td itemprop="description">Name of the policy.</td>
+                    <td itemprop="name">implements</td>
+                    <td itemprop="type">https://schema.org/URL</td>
+                    <td itemprop="cardinality">1..n</td>
+                    <td itemprop="description">Link to a policy or policies that this standard implements.</td>
                 </tr>
                 <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
                     <td itemprop="name">description</td>
                     <td itemprop="type">https://schema.org/Text</td>
                     <td itemprop="cardinality">0..1</td>
-                    <td itemprop="description">Detailed description of the policy.</td>
-                </tr>
-                <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
-                    <td itemprop="name">scope</td>
-                    <td itemprop="type">https://schema.org/URL</td>
-                    <td itemprop="cardinality">0..n</td>
-                    <td itemprop="description">Scope of the policy, indicating the areas it applies to by way of URLs</td>
+                    <td itemprop="description">Detailed description of the standard.</td>
                 </tr>
             </tbody>
         </table>
