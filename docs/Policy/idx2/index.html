@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Schema</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="a" itemscope itemtype="https://organised.team/Schema">
+    <header>
+        <h1>Policy</h1>
+    </header>
+    <nav>
+        <menu itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="/">Home</a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemref="a" itemprop="name" href="https://organised.team/Policy">Policy</a>
+            </li>
+        </menu>
+    </nav>
+    <main>
+    <p itemprop="description">
+    The Policy schema defines the structure for a policy document, including its unique identifier, name, description, and scope. This schema is used to ensure that policies are consistently defined and can be easily referenced across different systems.
+</p>
+<table>
+    <caption itemprop="name">Policy</caption>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Cardinality</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">statement</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">Name of the policy.</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">description</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">Detailed description of the policy.</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">scope</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="description">Scope of the policy, indicating the areas it applies to by way of URLs</td>
+        </tr>
+    </tbody>
+</table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Stance Global Ltd</p>
+    </footer>
+</body>
+
+</html>

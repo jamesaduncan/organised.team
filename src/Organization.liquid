@@ -1,0 +1,40 @@
+--- 
+layout: schema
+schematype: Organization
+tag: schema
+---
+<section>
+    <p itemprop="description">
+        An organization is a collection of entities that work together to achieve a common goal or goals.
+    </p>
+</section>
+<section>
+    <p>
+        Beyond the properties specified here, an organisation can also have the properties specified in
+        <a href="https://schema.org/Organization" itemprop="parent">https://schema.org/Organization</a>.
+    </p>
+</section>
+<table>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Cardinality</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">supplies</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="type">https://schema.org/UserNeed</td>
+            <td itemprop="description">a user need that this organisation satisfies</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">demands</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="type">https://schema.org/UserNeed</td>
+            <td itemprop="description">a user need this organisation depends upon</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+--- 
+layout: schema
+schematype: Schema
+tag: schema
+---
+<p itemprop="description">
+This is (somewhat self-referentially) a Schema for a Schema
+</p>
+<table>
+    <caption>The <span itemprop="name">Schema</span> schema</caption>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Cardinality</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+            <td itemprop="name">id</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">The URL of the schema (note: this can be an entire document, or a document fragment)</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+            <td itemprop="name">name</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">A name for the schema</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+            <td itemprop="name">description</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">A description of the schema</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+            <td itemprop="name">property</td>
+            <td itemprop="type">https://schema.org/Property</td>
+            <td itemprop="cardinality">0..n</td>
+            <td itemprop="description">Properties of the schema</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/schema/Property">
+            <td itemprop="name">parent</td>
+            <td itemprop="type">https://schema.org/URL</td>
+            <td itemprop="cardinality">0..1</td>
+            <td itemprop="description">The parent schema of this schema. A schema inherits the properties of its parent.</td>
+    </tbody>
+</table>

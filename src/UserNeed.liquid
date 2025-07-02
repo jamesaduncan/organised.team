@@ -1,0 +1,39 @@
+---
+layout: Schema
+schematype: UserNeed
+tag: schema
+---
+<p itemprop="description">
+    The User Need schema defines the requirements and expectations of a user within the context of a system or service. It is used to capture what users need from a product or service, ensuring that their needs are met effectively.
+</p>
+<table>
+    <caption itemprop="name">User Need</caption>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Type</th>
+            <th>Cardinality</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">user</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1..n</td>
+            <td itemprop="description">The user or users whose needs are being documented by this user need</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td>a <span itemprop="name">thing</span> (a product or service)</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">The description of a work product that a user requires</td>
+        </tr>
+        <tr itemprop="property" itemscope itemtype="https://organised.team/Property">
+            <td itemprop="name">outcome</td>
+            <td itemprop="type">https://schema.org/Text</td>
+            <td itemprop="cardinality">1</td>
+            <td itemprop="description">A reason the user wants it, the goal they are looking to achieve</td>
+        </tr>
+    </tbody>
+</table>
