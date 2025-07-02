@@ -82,6 +82,10 @@ menu[itemtype='http://schema.org/BreadcrumbList'] li+li:before {
     color: #8c8c8c;
 }
 
+main li:last-child:after {
+    content: ".";
+}
+
 [itemscope]:is([itemtype='https://organised.team/Schema'], [itemtype='https://schema.org/Thing']) table {
     font-size: 0.8em;
     width: 100%;
