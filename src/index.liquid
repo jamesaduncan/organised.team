@@ -1,0 +1,17 @@
+---
+layout: base
+title: Organised Team
+---
+<p>
+    This is a placeholder for now but Organised Team provides a small number of microdata schemas that are used to describe various elements of the Organised Team platform. The schemas are designed to be used in exchanging data with organised team, and other
+    software platforms. It builds upon <a href="https://schema.org" target="_blank">Schema.org</a> and extends it with additional types and properties that are specific to Organised Team.
+</p>
+<p>
+    The following schemas are documented:
+    <ul class="types">
+        {%- assign schemas = collections.schema | sort: "schematype" -%}
+        {%- for post in collections.schema -%}
+        <li><a href="{{ post.url }}">{{ post.data.schematype }}</a> - {{ post.data.description }}</li>
+        {%- endfor -%}
+    </ul>
+</p>
