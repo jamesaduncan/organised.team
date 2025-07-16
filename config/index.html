@@ -2,7 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rusty Beam Configuration</title>
-    <link rel="stylesheet" href="/assets/css/config-admin.css">
+    <script type="module" src="https://jamesaduncan.github.io/dom-aware-primitives/index.mjs"></script>
+    <script type="module" src="https://jamesaduncan.github.io/dom-aware-primitives/das-ws.mjs"></script>
 </head>
 <body>
     <!-- Admin UI Controls -->
@@ -390,18 +391,5 @@
     <script src="/assets/js/schema-loader.js"></script>
     <script src="/assets/js/config-admin.js"></script>
     
-    <!-- DOM-aware primitives for real-time config sync -->
-    <script type="module">
-        // Load DOM-aware primitives in correct order
-        const script1 = document.createElement('script');
-        script1.type = 'module';
-        script1.src = 'https://jamesaduncan.github.io/dom-aware-primitives/index.mjs';
-        document.head.appendChild(script1);
-
-        const script2 = document.createElement('script');
-        script2.type = 'module';
-        script2.src = 'https://jamesaduncan.github.io/dom-aware-primitives/das-ws.mjs';
-        document.head.appendChild(script2);
-    </script>
 
 </body></html>
